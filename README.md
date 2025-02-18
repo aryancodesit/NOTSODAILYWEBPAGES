@@ -56,4 +56,5 @@ Each day's project is linked to the Homepage, so you can navigate through them e
 2. CSS for styling
 3. JavaScript for interactivity
 4. VS Code for development
+   
 Feel free to explore and modify the code as you like! 🎉
