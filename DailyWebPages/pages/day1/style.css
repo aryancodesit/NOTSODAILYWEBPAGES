@@ -1,0 +1,58 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container Styling */
+.container {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Color Input Box Styling */
+#colorInput {
+    width: 50%;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid #ddd;
+    margin-bottom: 20px;
+}
+
+/* Color Display Box Styling */
+.color-display {
+    margin: 20px auto;
+    height: 100px;
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #ff0000;
+}
+
+/* Color Code Text Styling */
+#colorCode {
+    font-size: 1.5rem;
+    color: #333;
+}

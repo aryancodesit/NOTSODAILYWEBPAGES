@@ -1,0 +1,67 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container Styling */
+.container {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Maze Styling */
+#maze {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-template-rows: repeat(5, 60px);
+    gap: 2px;
+    margin: 20px 0;
+}
+
+/* Cell Styling */
+.cell {
+    width: 60px;
+    height: 60px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+}
+
+.wall {
+    background-color: #333;
+}
+
+.start {
+    background-color: #4CAF50;
+}
+
+.end {
+    background-color: #f44336;
+}
+
+.player {
+    background-color: #2196F3;
+}
+
+/* Status Text */
+#status {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}

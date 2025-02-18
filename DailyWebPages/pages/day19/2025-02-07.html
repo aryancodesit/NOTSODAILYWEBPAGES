@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll/Survey</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Poll/Survey</h1>
+        
+        <!-- Poll Form -->
+        <div id="pollFormContainer">
+            <form id="pollForm">
+                <h3>Poll Question</h3>
+                <input type="text" id="pollQuestion" placeholder="Enter poll question" required><br>
+                <h3>Poll Options</h3>
+                <input type="text" id="option1" placeholder="Option 1" required><br>
+                <input type="text" id="option2" placeholder="Option 2" required><br>
+                <input type="text" id="option3" placeholder="Option 3" required><br>
+                <input type="text" id="option4" placeholder="Option 4" required><br>
+                <button type="submit">Create Poll</button>
+            </form>
+        </div>
+
+        <!-- Poll Voting -->
+        <div id="pollVotingContainer" style="display: none;">
+            <p id="pollQuestionDisplay"></p>
+            <form id="voteForm">
+                <label>
+                    <input type="radio" name="pollOption" id="voteOption1"> <span id="option1Text"></span>
+                </label><br>
+                <label>
+                    <input type="radio" name="pollOption" id="voteOption2"> <span id="option2Text"></span>
+                </label><br>
+                <label>
+                    <input type="radio" name="pollOption" id="voteOption3"> <span id="option3Text"></span>
+                </label><br>
+                <label>
+                    <input type="radio" name="pollOption" id="voteOption4"> <span id="option4Text"></span>
+                </label><br>
+                <button type="submit">Vote</button>
+            </form>
+        </div>
+
+        <!-- Poll Results -->
+        <div id="resultContainer" style="display: none;">
+            <h2>Results</h2>
+            <p id="resultMessage"></p>
+            <canvas id="pollChart"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

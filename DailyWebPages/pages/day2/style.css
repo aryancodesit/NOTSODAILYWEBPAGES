@@ -1,0 +1,80 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #2e3192, #1bffff);
+    color: white;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.timer {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+.buttons button {
+    margin: 8px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#startBtn {
+    background: #4caf50;
+    color: white;
+}
+
+#pauseBtn {
+    background: #ff9800;
+    color: white;
+}
+
+#resetBtn {
+    background: #f44336;
+    color: white;
+}
+
+.buttons button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}

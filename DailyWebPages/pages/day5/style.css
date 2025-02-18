@@ -1,0 +1,84 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* More formal font */
+    background-color: #e9ecef; /* Light gray background */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+}
+
+.container {
+    max-width: 400px; /* Set a max width for the form */
+    width: 100%; /* Make it responsive */
+    background: white;
+    padding: 30px; /* Increased padding for a more spacious feel */
+    border-radius: 8px;
+    border: 2px solid #007bff; /* Blue border for the container */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #343a40; /* Darker color for better readability */
+    font-size: 24px; /* Slightly larger font size */
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold; /* Make labels bold */
+    color: #495057; /* Darker color for labels */
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 12px; /* Increased padding for comfort */
+    margin-bottom: 20px;
+    border: 2px solid #ced4da; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding in width */
+    font-size: 16px; /* Increased font size */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff; /* Formal blue color */
+    color: white;
+    border: 2px solid #007bff; /* Blue border for the button */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Increase font size */
+    transition: background-color 0.3s, border-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #0056b3; /* Darker border on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px; /* Increase font size for result */
+    color: #343a40; /* Darker color for better readability */
+}
+
+.disclaimer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #6c757d; /* Subtle gray for disclaimer */
+    text-align: center;
+}

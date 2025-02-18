@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+.info {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.word-list {
+    margin: 20px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+li.found {
+    text-decoration: line-through;
+    color: green;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    gap: 5px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #f1f1f1;
+    user-select: none;
+}
+
+.cell.highlight {
+    background-color: #a0e7a0;
+    color: #fff;
+    font-weight: bold;
+}
+
+.cell:hover {
+    background-color: #d1d1d1;
+}
+
+#gameStatus {
+    font-size: 1.2em;
+    color: #d35400;
+    margin-top: 20px;
+}

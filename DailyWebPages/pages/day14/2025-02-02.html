@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Art Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Art Board</h1>
+        <div id="controls">
+            <button onclick="clearCanvas()">Clear</button>
+            <label for="color">Choose Color:</label>
+            <input type="color" id="color" onchange="changeColor(this.value)">
+            <label for="line-width">Line Width:</label>
+            <input type="range" id="line-width" min="1" max="10" value="5" onchange="changeLineWidth(this.value)">
+        </div>
+        <canvas id="artboard"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
